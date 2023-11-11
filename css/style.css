@@ -35,6 +35,9 @@ h1.name {
 p {
     color: var(--white);
 }
+.description {
+    text-align: center;
+}
 
 h5.contact-me {
     display: inline;
