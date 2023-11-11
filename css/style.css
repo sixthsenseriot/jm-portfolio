@@ -1,0 +1,87 @@
+:root {
+    --primary-dark: #14161c;
+    --offblack: #07080b;
+    --white: #FFFFFF;
+    --secondary-color: #fc9218;
+}
+
+body {
+    background-color: var(--primary-dark);
+}
+
+.navbar-color {
+    background-color: var(--offblack);
+}
+.nav-link,
+.navbar-brand {
+    color: var(--white);
+}
+.nav-link:hover,
+.navbar-brand:hover {
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
+.heading-container {
+    margin-top: 200px;
+}
+h4.intro {
+    color: var(--secondary-color);
+}
+h1.name {
+    font-size: 60px;
+    color: var(--white);
+}
+p {
+    color: var(--white);
+}
+
+h5.contact-me {
+    display: inline;
+    vertical-align: top;
+    color: var(--white);
+}
+.underline {
+    border-bottom: 2px solid var(--secondary-color);
+}
+.fa-linkedin,
+.fa-envelope {
+    font-size: 30px;
+    color: var(--white);
+}
+.fa-linkedin:hover,
+.fa-envelope:hover {
+    color: var(--secondary-color);
+    transition: all 100ms ease-in-out;
+}
+
+.gallery-container {
+    margin-top: 250px;
+}
+h3 {
+    color: var(--white);
+}
+.enhance-img {
+    transition: transform 0.2s;
+  }
+.enhance-img:hover {
+    transform: scale(1.02);
+}
+
+.footer-container {
+    background-color: var(--offblack);
+}
+
+.contact-btn {
+  border-radius: 4px;
+  padding: 15px 20px;
+  color: white;
+  background-color: var(--primary-dark);
+  border: none;
+}
+.contact-btn:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  transition: all 100ms ease-in-out;
+}
