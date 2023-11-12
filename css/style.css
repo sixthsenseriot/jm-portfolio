@@ -99,7 +99,10 @@ h5.contact-me {
         font-size: 40px !important;
     }
     h2.carousel-head {
-        font-size: 40px;
+        font-size: 30px;
         padding-top: 40px;
+    }
+    h5.carousel-description {
+        font-size: 15px;
     }
 }
