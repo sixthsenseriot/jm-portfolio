@@ -1,27 +1,13 @@
 :root {
-    --primary-dark: #14161c;
-    --offblack: #07080b;
+    --black: #000000;
+    --offblack: #212529;
+    --gray: #4C4C4C;
     --white: #FFFFFF;
-    --secondary-color: #fc9218;
+    --offwhite: #F8F9FA;
+    --secondary-color: #0070BB;
 }
 
-body {
-    background-color: var(--primary-dark);
-}
-
-.navbar-color {
-    background-color: var(--offblack);
-}
-.nav-link,
-.navbar-brand {
-    color: var(--white);
-}
-.nav-link:hover,
-.navbar-brand:hover {
-    color: var(--secondary-color);
-    transition: all 100ms ease-in-out;
-}
-
+/* Homepage */
 .heading-container {
     margin-top: 200px;
 }
@@ -30,10 +16,6 @@ h4.intro {
 }
 h1.name {
     font-size: 60px;
-    color: var(--white);
-}
-p {
-    color: var(--white);
 }
 .description {
     text-align: center;
@@ -42,7 +24,6 @@ p {
 h5.contact-me {
     display: inline;
     vertical-align: top;
-    color: var(--white);
 }
 .underline {
     border-bottom: 2px solid var(--secondary-color);
@@ -50,7 +31,7 @@ h5.contact-me {
 .fa-linkedin,
 .fa-envelope {
     font-size: 30px;
-    color: var(--white);
+    color: var(--offblack);
 }
 .fa-linkedin:hover,
 .fa-envelope:hover {
@@ -61,9 +42,6 @@ h5.contact-me {
 .gallery-container {
     margin-top: 250px;
 }
-h3 {
-    color: var(--white);
-}
 .enhance-img {
     transition: transform 0.2s;
   }
@@ -71,23 +49,46 @@ h3 {
     transform: scale(1.02);
 }
 
-.footer-container,
-.navbar-toggler-icon {
-    background-color: var(--offblack);
-}
-
 .contact-btn {
-  border-radius: 4px;
-  padding: 15px 20px;
-  color: white;
-  background-color: var(--primary-dark);
-  border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    color: var(--white);
+    background-color: var(--offblack);
+    border: none;
 }
 .contact-btn:hover {
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  color: white;
-  transition: all 100ms ease-in-out;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+    transition: all 100ms ease-in-out;
+}
+
+/* Properties gallery */
+.cropped {
+    max-height: 500px;
+    object-fit: cover;
+}
+.dark-overlay:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: 1;
+  }
+.carousel-caption {
+    z-index: 2;
+}
+.carousel-head {
+    font-size: 50px;
+}
+
+.footer-container {
+    background-color: var(--offwhite);
 }
 
 @media (max-width: 767px) {
@@ -96,5 +97,9 @@ h3 {
     }
     h1 {
         font-size: 40px !important;
+    }
+    h2.carousel-head {
+        font-size: 40px;
+        padding-top: 40px;
     }
 }
