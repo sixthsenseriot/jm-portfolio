@@ -5,6 +5,7 @@
   --white: #ffffff;
   --offwhite: #f8f9fa;
   --secondary-color: #0070bb;
+  --lightgray: #dee2e6;
 }
 
 /* Homepage */
@@ -28,15 +29,11 @@ h5.contact-me {
 .underline {
   border-bottom: 2px solid var(--secondary-color);
 }
-.fa-linkedin,
-.fa-envelope,
-.fa-square-phone {
+.home-logo {
   font-size: 30px;
   color: var(--offblack);
 }
-.fa-linkedin:hover,
-.fa-envelope:hover,
-.fa-square-phone:hover {
+.home-logo:hover {
   color: var(--secondary-color);
   transition: all 100ms ease-in-out;
 }
@@ -100,6 +97,24 @@ h5.contact-me {
 .col-12 img {
   cursor: pointer;
   width: 100%;
+}
+
+/* Contact page */
+.contact-content {
+  margin-top: 110px;
+}
+
+.contact-card {
+  padding: 75px 25px;
+}
+
+.contact-line,
+.c-logo {
+  font-size: 15px;
+}
+
+.vr {
+  border-left: 1px solid var(--lightgray);
 }
 
 @media (max-width: 767px) {
